@@ -3,20 +3,18 @@ import printMe from './print.js';
 import './style.css';
 
 function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  const element = document.createElement('div');
+  const btn = document.createElement('button');
 
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+  // Lodash, now imported by this script
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-    element.appendChild(btn);
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = printMe;
 
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
-  index.html
+  element.appendChild(btn);
+
+  return element;
+}
+
+document.body.appendChild(component());
